@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --es-module-specifier-resolution=node src/app.js",
+    "serve": "node --es-module-specifier-resolution=node src/app.js",
+    "daemon": "nohup npm run serve &"
+  },
+  "dependencies": {
+    "debug": "^2.6.3",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-combine-routers": "^4.0.2",
+    "koa-cors": "0.0.16",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^10.1.1",
+    "koa2-cors": "^2.0.6",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
